@@ -9,15 +9,24 @@
     <title>Sign up</title>
 </head>
 <body>
-    <header>Бүртгүүлэх</header>
+    <header><h1>Бүртгүүлэх</h1></header>
     <div>
-        <input type="text" class="form-control" id="inputLastName" placeholder = "Овог"><br>
-        <input type="text" class="form-control" id="inputName" placeholder ="Нэр"><br>
-        <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Утасны дугаар"><br>
-        <input type="text" class="form-control" id="email" placeholder="Мэйл хаяг"><br>
-        <input type="text" class="form-control" id="name" placeholder="Нууц үг"><br>
-        <a href="./log-in.html">Бүртгүүлэх</a>
+        <label for="inputLastName">Овог:</label>
+        <input type="text" class="form-control" id="inputLastName" placeholder="Овог" aria-label="Овог" required><br>
 
+        <label for="inputName">Нэр:</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Нэр" aria-label="Нэр" required><br>
+
+        <label for="inputPhoneNumber">Утасны дугаар:</label>
+        <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="Утасны дугаар" aria-label="Утасны дугаар" required><br>
+
+        <label for="email">Мэйл хаяг:</label>
+        <input type="email" class="form-control" id="email" placeholder="Мэйл хаяг" aria-label="Мэйл хаяг" required><br>
+
+        <label for="password">Нууц үг:</label>
+        <input type="password" class="form-control" id="password" placeholder="Нууц үг" aria-label="Нууц үг" required><br>
+
+        <button type="submit">Бүртгүүлэх</button>
     </div>
 </body>
 </html>
